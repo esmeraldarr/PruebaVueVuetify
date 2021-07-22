@@ -1,0 +1,333 @@
+
+.navbar{
+    box-shadow: none !important;
+    border: 1px solid #e8e6e6cf !important;
+    background: white !important;
+}
+
+/* Cursos */
+
+.courses{
+    position: relative;
+    width: 1440px;
+    height: 2294px;
+    background: #FFFFFF;
+}
+
+
+/* Rectangle Copy */
+
+.rectangle{
+    position: relative;
+    width: 100%;
+    height: 1789px;
+    left: 0px;
+}
+
+/* Grays/Light */
+
+.graysLight{
+    background: #EDF2F7;
+}
+
+
+/* Descubre */
+
+.discover {
+    position: absolute;
+    left: 198.54%;
+    right: -110.35%;
+    top: -8.14%;
+    bottom: 106.74%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+/* or 173% */
+
+.black {
+    color: #000000;
+}
+
+
+
+/* Footer */
+
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 125px;
+    left: 0px;
+    top: 2169px;
+}
+
+.color-footer{
+    background: #262626;
+}
+
+
+/* Rectangle 1 */
+
+.rectangle-1{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #262626;
+}
+
+
+/* Términos y condiciones */
+.terms-and-Conditions{
+    position: absolute;
+    left: 9.38%;
+    right: 78.89%;
+    top: 40%;
+    bottom: 40.8%;
+    
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+/* identical to box height, or 150% */
+
+.box{
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+}
+
+/* Grays/Middle */
+
+.graysMiddle{
+    color: #D5D5D5;
+}
+
+
+
+/* Privacidad */
+.privacy{
+    position: absolute;
+    left: 23.4%;
+    right: 71.39%;
+    top: 40%;
+    bottom: 40.8%;
+    
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+
+/* Soporte */
+
+.supports{
+    position: absolute;
+    left: 30.69%;
+    right: 65.35%;
+    top: 40%;
+    bottom: 40.8%;
+    
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Socialab.cl */
+
+.socialab{
+    position: absolute;
+    left: 73.68%;
+    right: 20.49%;
+    top: 40.8%;
+    bottom: 40%;
+
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* identical to box height, or 150%
+display: flex;
+align-items: center; */
+
+
+/* Group 1669 */
+
+.group-1669{
+    position: absolute;
+    left: 80.76%;
+    right: 9.44%;
+    top: 40%;
+    bottom: 40%;
+    opacity: 0.6;
+}
+
+
+/* youtube-play - FontAwesome */
+
+.youtube{
+    position: absolute;
+    left: 85%;
+    right: 13.89%;
+    top: 41.54%;
+    bottom: 44.62%;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+
+/* instagram - FontAwesome */
+
+.instagra{
+    position: absolute;
+    left: 87.22%;
+    right: 11.74%;
+    top: 40.77%;
+    bottom: 43.85%;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+}
+/* linkedin - FontAwesome */
+
+.linkedin{
+    position: absolute;
+    left: 89.51%;
+    right: 9.44%;
+    top: 40%;
+    bottom: 44.62%;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+/* facebook - FontAwesome */
+
+.facebook{
+    position: absolute;
+    left: 80.76%;
+    right: 18.4%;
+    top: 41.54%;
+    bottom: 44.62%;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+}
+
+/* twitter - FontAwesome */
+
+.twitter{
+    position: absolute;
+    left: 82.64%;
+    right: 15.97%;
+    top: 40.77%;
+    bottom: 40%;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* ic:baseline-list-alt */
+
+.list{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 132px;
+    top: 496px;
+}
+
+/* Rectangle 206 */
+
+.rectangle-206{
+    position: absolute;
+    width: 3px;
+    height: 51px;
+    left: 50.2%;
+}
+
+/* Base/Primary */
+.base-primary{
+    background: #3434FF;
+    transform: rotate(90deg);
+}
+
+.text-courses{
+    position: revert;
+    left: 21.11%;
+    right: 21.11%;
+    top: 6.58%;
+    bottom: 91.23%;
+}
+
+
+/* H1 34 */
+
+.text-courses h1{
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+/* Base/Secondary */
+
+.base-secondary{
+    color: #000000;
+}
+
+.component-2{
+    position: absolute;
+    width: 122px;
+    height: 290px;
+    left: 136px;
+    z-index: 1;
+}
+
+.component-2 .base-primary{
+    background: #3434FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.gray-card{
+    background: #4F4F4F;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+}
