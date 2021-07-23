@@ -39,15 +39,36 @@
 				</v-layout>
 				<v-layout wrap class="mt-12" md12>
 					<v-flex v-for="card in showCards" :key="card.num" md4 >
-						<v-card>
-							<v-card-title>{{card.num}}</v-card-title>
-							<v-card-subtitle>{{card.nombre}}</v-card-subtitle>
+						<v-card class="courses-cards gray-2">
+							<v-img
+								class="white--text align-end"
+								height="90%"
+								:src="card.imageUrl"
+								>
+							</v-img>
+							<v-card-actions>
+								<v-dialog
+									:v-model="card.multiverseid"
+									width="500"
+									>
+									<template v-slot:activator="{ on, cardDetail }">
+										<a style="color:white;" v-bind="cardDetail" v-on="on">{{ card.name }}</a>
+										
+									</template>
+
+									<v-card>
+										<v-card-title class="text-h5 grey lighten-2">
+										Artista {{ card.artist }}
+										</v-card-title>
+
+										<v-card-text>
+											<h6>Poder :</h6><p>{{ card.power }}</p>
+											<h6>Descripción :</h6><p>{{ card.text }}</p>
+										</v-card-text>
+									</v-card>
+								</v-dialog>
+							</v-card-actions>
 						</v-card>
-					</v-flex>
-					<v-flex xs12>
-						<div class="text-center">
-							<v-pagination v-model="page" :length="length"></v-pagination>
-						</div>
 					</v-flex>
 				</v-layout>	
 			</v-container>
@@ -60,6 +81,7 @@
 <script>
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
+import axios from 'axios'
 // import Searcher from '@/components/Searcher.vue'
 
 export default {
@@ -71,42 +93,31 @@ export default {
 	},
 	data() {
 		return {
-		page:1,
-      length:2,
-		items: [
-        {
-          text: 'Inicio',
-          disabled: true,
-          href: '',
-        },
-        {
-          text: 'Cursos',
-          disabled: false,
-          href: '',
-        }
-      ],
-		cards: [
-			{"num": 1, "nombre": "n1"},
-			{"num": 2, "nombre": "n2"},
-			{"num": 3, "nombre": "n3"},
-			{"num": 4, "nombre": "n4"},
-			{"num": 5, "nombre": "n5"},
-			{"num": 6, "nombre": "n6"},
-			{"num": 7, "nombre": "n7"},
-			{"num": 8, "nombre": "n8"}
-		]   
+			cards: null,
+			items: [
+				{
+				text: 'Inicio',
+				disabled: true,
+				href: '',
+				},
+				{
+				text: 'Cursos',
+				disabled: false,
+				href: '',
+				}
+			]   
 		}
 	},
-	computed: {
-  
-    showCards () { 
-    
-      const { page, length, cards } = this;
-      const number = Math.ceil(cards.length / length);
-      return cards.slice((page - 1) * number, page * number);
-    
-    }
-  
-  }
+computed: {
+	showCards () { 
+		const { cards } = this;
+		return cards;
+	}
+},
+mounted () {
+	axios
+	.get('https://api.magicthegathering.io/v1/cards')
+	.then(response => (this.cards = response.data.cards))
+}
 }
 </script>

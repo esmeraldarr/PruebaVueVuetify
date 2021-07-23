@@ -20,7 +20,6 @@
 .rectangle{
     position: relative;
     width: 100%;
-    height: 1789px;
     left: 0px;
 }
 
@@ -30,6 +29,10 @@
     background: #EDF2F7;
 }
 
+.gray-2{
+    background: #4F4F4F !important;
+    border-radius: 10px;
+}
 
 /* Descubre */
 
@@ -330,4 +333,10 @@ align-items: center; */
     background: #4F4F4F;
     mix-blend-mode: normal;
     border-radius: 10px;
+}
+
+.courses-cards{
+    width: 370px;
+    margin-bottom: 30px;
+
 }
